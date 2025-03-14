@@ -1,4 +1,4 @@
-module doris-streamloader
+module github.com/gwokhou/doris-streamloader
 
 go 1.20
 

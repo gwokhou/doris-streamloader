@@ -19,8 +19,6 @@ package file
 
 import (
 	"bufio"
-	"doris-streamloader/loader"
-	"doris-streamloader/report"
 	"io"
 	"os"
 	"path/filepath"
@@ -28,6 +26,9 @@ import (
 	"sync"
 	"sync/atomic"
 	"time"
+
+	"github.com/gwokhou/doris-streamloader/loader"
+	"github.com/gwokhou/doris-streamloader/report"
 
 	log "github.com/sirupsen/logrus"
 )

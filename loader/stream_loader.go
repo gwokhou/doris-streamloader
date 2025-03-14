@@ -18,7 +18,6 @@
 package loader
 
 import (
-	"doris-streamloader/report"
 	"encoding/json"
 	"fmt"
 	"io"
@@ -30,6 +29,8 @@ import (
 	"sync/atomic"
 	"time"
 	"unicode/utf8"
+
+	"github.com/gwokhou/doris-streamloader/report"
 
 	"github.com/pierrec/lz4/v4"
 	log "github.com/sirupsen/logrus"

@@ -28,11 +28,10 @@ import (
 	"sync"
 	"time"
 
-	"doris-streamloader/loader"
-	file "doris-streamloader/reader"
-	"doris-streamloader/report"
-	"doris-streamloader/utils"
-
+	"github.com/gwokhou/doris-streamloader/loader"
+	file "github.com/gwokhou/doris-streamloader/reader"
+	"github.com/gwokhou/doris-streamloader/report"
+	"github.com/gwokhou/doris-streamloader/utils"
 	log "github.com/sirupsen/logrus"
 )
 
@@ -83,7 +82,7 @@ var (
 	showVersion          bool
 	queueSize            int
 	lineDelimiter        byte = '\n'
-	bufferPool           = sync.Pool{
+	bufferPool                = sync.Pool{
 		New: func() interface{} {
 			return make([]byte, 0, bufferSize)
 		},
